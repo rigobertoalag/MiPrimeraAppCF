@@ -3,9 +3,10 @@ import { NavigationContainer } from '@react-navigation/native';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
 
 const Routes = () => {
-    return {
 
-    }
+    return 
+        null
 }
 
 export default Routes
+//emulator -list-avds
