@@ -22,14 +22,16 @@ const LoginScreen = ({ navigation }) => {
         }
     }
 
-    <View style={styles.container}>
-        <View style={styles.imageContainer}>
-            <Image
-                source={{
-                    uri: 'https://reactnative.dev/img/tiny_logo.png',
-                }}
-                style={styles.image}
-            />
+    return (
+        <View style={styles.container}>
+            <View style={styles.imageContainer}>
+                <Image
+                    source={{
+                        uri: 'https://reactnative.dev/img/tiny_logo.png',
+                    }}
+                    style={styles.image}
+                />
+            </View>
             <View style={styles.inputContainer}>
                 <TextInput
                     placeholder="user"
@@ -51,13 +53,14 @@ const LoginScreen = ({ navigation }) => {
                 onPress={handleSignInPress}
             />
         </View>
-    </View>
+    )
 }
 
 const styles = StyleSheet.create({
     image: {
         width: 70,
-        height: 70
+        height: 70,
+        alignSelf: 'center'
     },
     imageContainer: {
         marginTop: 10,

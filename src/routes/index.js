@@ -4,7 +4,7 @@ import { createNativeStackNavigator } from '@react-navigation/native-stack';
 
 import TodoListScreen from '../views/TodoListScreen/index'
 import LoginScreen from '../views/LoginScreen/index'
-import HomeScreen from '../views/LoginScreen/index'
+import HomeScreen from '../views/HomeScreen/index'
 
 const Routes = () => {
 

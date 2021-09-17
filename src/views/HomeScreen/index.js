@@ -1,22 +1,27 @@
 import React from 'react'
 
-import { Text, StyleSheet, SafeAreaView, Image, View } from 'react-native'
+import { Text, StyleSheet, SafeAreaView, Image, View, Button } from 'react-native'
 
-const HomeScreen = () => {
-    <SafeAreaView style={styles.container}>
-        <View style={styles.headerContainer}>
-            <Image
-                source={{
-                    uri: 'https://reactnative.dev/img/tiny_logo.png',
-                }}
-                style={styles.image}
-            />
-
+const HomeScreen = ({navigation}) => {
+    return (
+        <SafeAreaView style={styles.container}>
+            <View style={styles.headerContainer}>
+                <Image
+                    source={{
+                        uri: 'https://reactnative.dev/img/tiny_logo.png',
+                    }}
+                    style={styles.image}
+                />
+            </View>
             <View style={styles.content}>
                 <Text style={styles.title}>Welcome back, user</Text>
+                <Button 
+                    title='Ir al ToDo app'
+                    onPress={()=>navigation.navigate('TodoList')}
+                />
             </View>
-        </View>
-    </SafeAreaView>
+        </SafeAreaView>
+    )
 }
 
 styles = StyleSheet.create({
